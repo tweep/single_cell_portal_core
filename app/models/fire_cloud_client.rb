@@ -18,7 +18,7 @@ class FireCloudClient < Struct.new(:user, :project, :access_token, :api_root, :s
 	# constant used for retry loops in process_request
 	MAX_RETRY_COUNT = 3
 	# default namespace used for all FireCloud project workspaces owned by the 'portal'
-	PORTAL_NAMESPACE = 'single-cell-portal'
+	PORTAL_NAMESPACE = 'single-cell-portal-pilot'
 	# location of Google service account JSON (must be absolute path to file)
 	SERVICE_ACCOUNT_KEY = !ENV['SERVICE_ACCOUNT_KEY'].blank? ? File.absolute_path(ENV['SERVICE_ACCOUNT_KEY']) : ''
 	# Permission values allowed for ACLs
